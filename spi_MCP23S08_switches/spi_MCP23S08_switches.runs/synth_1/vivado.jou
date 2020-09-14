@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Sep 11 11:08:04 2020
+# Process ID: 588
+# Current directory: D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.runs/synth_1
+# Command line: vivado.exe -log spi_MCP23S08_switches_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_MCP23S08_switches_top.tcl
+# Log file: D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.runs/synth_1/spi_MCP23S08_switches_top.vds
+# Journal file: D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source spi_MCP23S08_switches_top.tcl -notrace

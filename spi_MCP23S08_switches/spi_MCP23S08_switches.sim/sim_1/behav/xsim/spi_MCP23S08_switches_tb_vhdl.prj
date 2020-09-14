@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spi_MCP23S08_switches.srcs/sources_1/new/spi_MCP23S08_switches.vhd" \
+"../../../../spi_MCP23S08_switches.srcs/sim_1/new/spi_MCP23S08_switches_tb.vhd" \
+
+# Do not sort compile order
+nosort

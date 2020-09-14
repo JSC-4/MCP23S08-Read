@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Failure: simulation complete
+Time: 201250 ns  Iteration: 0  Process: /spi_MCP23S08_switches_tb/spi_process  File: D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sim_1/new/spi_MCP23S08_switches_tb.vhd
+$finish called at time : 201250 ns : File "D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sim_1/new/spi_MCP23S08_switches_tb.vhd" Line 79

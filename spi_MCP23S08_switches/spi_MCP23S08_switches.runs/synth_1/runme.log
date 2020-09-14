@@ -1,0 +1,399 @@
+
+*** Running vivado
+    with args -log spi_MCP23S08_switches_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_MCP23S08_switches_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source spi_MCP23S08_switches_top.tcl -notrace
+Command: synth_design -top spi_MCP23S08_switches_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 383.051 ; gain = 100.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'spi_MCP23S08_switches_top' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/spi_MCP23S08_switches_top.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'spi_MCP23S08_switches' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/spi_MCP23S08_switches.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_MCP23S08_switches' (1#1) [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/spi_MCP23S08_switches.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/clk_div.vhd:21]
+	Parameter g_fin bound to: 100000000 - type: integer 
+	Parameter g_fout bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (2#1) [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/clk_div.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'debounce' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/debounce.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (3#1) [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/debounce.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'spi_MCP23S08_switches_top' (4#1) [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/spi_MCP23S08_switches_top.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 439.508 ; gain = 156.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 439.508 ; gain = 156.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 439.508 ; gain = 156.988
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spi_MCP23S08_switches_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/spi_MCP23S08_switches_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 776.598 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 776.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 776.598 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 776.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'spi_MCP23S08_switches'
+INFO: [Synth 8-5544] ROM "o_op_val" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_done_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "r_cap_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "o_cs" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_load_tx" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_tmp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg_reg' in module 'debounce'
+INFO: [Synth 8-5546] ROM "r_q_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "o_db_level" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                s_enable |                               01 |                               01
+                  s_xmit |                               10 |                               10
+               s_capture |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg' using encoding 'sequential' in module 'spi_MCP23S08_switches'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_zero |                               00 |                               00
+                 s_wait1 |                               01 |                               01
+                   s_one |                               10 |                               10
+                 s_wait0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_state_reg_reg' using encoding 'sequential' in module 'debounce'
+WARNING: [Synth 8-327] inferring latch for variable 'r_q_zero_reg' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/debounce.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'r_q_next_reg' [D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.srcs/sources_1/new/debounce.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module spi_MCP23S08_switches 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "clock_div_10Mhz/r_tmp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "spi_MCP23S08_switches_inst/r_done_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "debounce/r_q_zero" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'spi_MCP23S08_switches_inst/r_tx_reg_reg[0]' (FDC_1) to 'spi_MCP23S08_switches_inst/r_tmr_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\debounce/r_q_zero_reg )
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_zero_reg) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[21]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[20]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[19]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[18]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[17]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[16]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[15]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[14]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[13]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[12]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[11]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[10]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[9]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[8]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[7]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[6]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[5]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[4]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[3]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[2]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[1]) is unused and will be removed from module spi_MCP23S08_switches_top.
+WARNING: [Synth 8-3332] Sequential element (debounce/r_q_next_reg[0]) is unused and will be removed from module spi_MCP23S08_switches_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 776.598 ; gain = 494.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     1|
+|3     |LUT2 |    41|
+|4     |LUT3 |     4|
+|5     |LUT4 |     7|
+|6     |LUT5 |     4|
+|7     |LUT6 |     5|
+|8     |FDCE |    65|
+|9     |FDPE |     1|
+|10    |FDRE |     2|
+|11    |IBUF |     4|
+|12    |OBUF |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |   147|
+|2     |  clock_div_10Mhz            |clk_div               |     8|
+|3     |  debounce                   |debounce              |     5|
+|4     |  spi_MCP23S08_switches_inst |spi_MCP23S08_switches |   117|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 786.590 ; gain = 166.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 786.590 ; gain = 504.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 798.527 ; gain = 529.289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.527 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/VHDL_Projects/MCP23S08_switches/spi_MCP23S08_switches/spi_MCP23S08_switches.runs/synth_1/spi_MCP23S08_switches_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file spi_MCP23S08_switches_top_utilization_synth.rpt -pb spi_MCP23S08_switches_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 11 11:08:25 2020...

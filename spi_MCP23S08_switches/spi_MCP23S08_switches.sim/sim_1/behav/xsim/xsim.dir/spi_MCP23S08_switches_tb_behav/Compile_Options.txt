@@ -1,0 +1,1 @@
+-wto "dd61fa8b22734a4e935c7e96149a97af" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "spi_MCP23S08_switches_tb_behav" "xil_defaultlib.spi_MCP23S08_switches_tb" -log "elaborate.log" 

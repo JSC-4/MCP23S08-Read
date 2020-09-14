@@ -1,0 +1,7 @@
+Running: xsim.dir/spi_MCP23S08_switches_tb_behav/xsimk.exe -simmode gui -wdb spi_MCP23S08_switches_tb_behav.wdb -simrunnum 0 -socket 59125
+Design successfully loaded
+Design Loading Memory Usage: 6276 KB (Peak: 6276 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8828 KB (Peak: 8828 KB)
+Simulation CPU Usage: 46 ms
